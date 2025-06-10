@@ -1,0 +1,235 @@
+.container {
+            width: 900px; /* Fix the container width */
+            margin: 20px auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            overflow-x: auto; /* Enable horizontal scrolling */
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .header img {
+            max-width: 100px;
+            margin-bottom: 10px;
+            margin-left: 700px;
+        }
+
+        /* Quote container styling */
+        .quote-container {
+            width: 100%;
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        .quote-container h1 {
+            margin: 0;
+            font-size: 20px;
+        }
+
+        /* Quotation info */
+        .quotation-info {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .quotation-info div {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .quotation-info div p {
+            margin: 0;
+            font-size: 15px;
+        }
+
+        .datevalidity p {
+            margin: 0;
+            font-size: 15px;
+            white-space: nowrap;
+        }
+
+        /* To line */
+        .to-line {
+            text-align: left;
+            margin-top: 10px;
+            font-size: 15px;
+        }
+
+        /* Table container with horizontal scrolling */
+        .table-container {
+            width: 100%;
+            overflow-x: auto; /* Enable horizontal scrolling */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        /* Terms and payment mode sections */
+        .terms, .mode-of-payment {
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+        }
+
+        /* Logos section */
+        .logos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .signature {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            width: 100%;
+            height: 200px;
+        }
+
+        .logos img {
+            max-width: 80px;
+            margin: 10px;
+        }
+
+        /* Small text styling */
+        .small-text {
+            line-height: 1.12px;
+            font-size: 8px;
+        }
+
+        /* Mode of payment styling */
+        .mode-of-payment {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        
+        .mode-of-payment h3 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .mode-of-payment .payment-info {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Three columns */
+            gap: 10px 20px; /* Spacing between items */
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .mode-of-payment .payment-info div {
+            font-size: 14px; /* Adjust text size */
+            line-height: 1.5; /* Improve readability */
+        }
+        
+        .mode-of-payment .payment-info div:nth-child(7),
+        .mode-of-payment .payment-info div:nth-child(8) {
+            grid-column: span 3; /* Span the last two items across the row */
+            text-align: left;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+
+        td[contenteditable="true"] {
+            background-color: #f9f9f9;
+        }
+
+        .actions {
+            text-align: right;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .total-row {
+            font-weight: bold;
+            background-color: #f4f4f9;
+        }
