@@ -1,10 +1,3 @@
-<img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" style="height:64px;margin-right:32px"/>
-
-# i want to directly paste it in readme so give
-
-Here's the complete README content ready to paste directly into your `README.md` file:
-
-```markdown
 # 🧠 Resume-Based Course Recommender System
 
 This is a **Django-based web application** that intelligently recommends Udemy courses by analyzing the contents of your uploaded resume. It utilizes **NLP embeddings** to match your resume to relevant course titles.
@@ -36,8 +29,6 @@ This is a **Django-based web application** that intelligently recommends Udemy c
 
 ## 📊 System Architecture
 
-```
-
 graph TD
 A[User Uploads Resume (PDF/TXT)] --> B[Parse Text using pdfplumber or plain read]
 B --> C[Generate Sentence Embedding using DistilBERT]
@@ -48,32 +39,29 @@ F --> G
 G --> H[Sort by Similarity Score]
 H --> I[Top N Course Recommendations]
 
-```
+
 
 ---
 
 ## 📁 Folder Structure
 
-```
-
 resume_recommender/
-├── courses/             \# Django app for course processing
-│   ├── views.py
-│   ├── models.py
-│   ├── urls.py
-│   └── utils/
-│       ├── parser.py        \# Resume parsing logic
-│       ├── embeddings.py    \# SentenceTransformers wrapper
-│       └── recommender.py   \# Cosine similarity logic
+├── courses/ # Django app for course processing
+│ ├── views.py
+│ ├── models.py
+│ ├── urls.py
+│ └── utils/
+│ ├── parser.py # Resume parsing logic
+│ ├── embeddings.py # SentenceTransformers wrapper
+│ └── recommender.py # Cosine similarity logic
 ├── templates/
-│   └── upload.html
+│ └── upload.html
 ├── static/
-│   └── style.css
-├── media/              \# Uploaded files (resume, dataset)
+│ └── style.css
+├── media/ # Uploaded files (resume, dataset)
 ├── manage.py
 └── requirements.txt
 
-```
 
 ---
 
@@ -96,45 +84,33 @@ resume_recommender/
 ## 🔧 Installation & Setup
 
 1. **Clone the repository**
-```
-
-git clone <your-repo-url>
+git clone (https://github.com/dhruv-lakhe/course-recommende)
 cd resume_recommender
 
-```
+
 
 2. **Create virtual environment**
-```
-
 python -m venv venv
-source venv/bin/activate  \# On Windows: venv\Scripts\activate
+source venv/bin/activate # On Windows: venv\Scripts\activate
 
-```
 
 3. **Install dependencies**
-```
-
 pip install -r requirements.txt
 
-```
 
 4. **Run migrations**
-```
-
 python manage.py migrate
 
-```
 
 5. **Start development server**
-```
-
 python manage.py runserver
 
-```
 
 ---
 
 ## 📦 Requirements
+pip install -r requirements.txt
+
 
 Key packages:
 - Django
@@ -158,13 +134,6 @@ Key packages:
 ## 📋 Dataset Format
 
 Your Udemy courses CSV should have these columns:
-```
-
-title,link,price
-"Python for Data Science","https://udemy.com/course/...",49.99
-"Web Development Bootcamp","https://udemy.com/course/...",89.99
-
-```
 
 ---
 
@@ -194,7 +163,5 @@ There is no live deployment currently — run locally using Django's development
 ## 📬 Contact
 
 Feel free to connect on LinkedIn or email at dhruvlakhe@gmail.com.
-```
 
-Just copy and paste this entire block into your `README.md` file! It includes all the original content plus the enhanced sections with installation instructions, usage guide, and dataset format specifications.
 
