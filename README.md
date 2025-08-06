@@ -30,7 +30,7 @@ This is a **Django-based web application** that intelligently recommends Udemy c
 
 ## 📊 System Architecture
 
-
+```
 📄 User Uploads Resume (PDF/TXT)
         ↓
 🔍 Parse Text using pdfplumber
@@ -46,7 +46,7 @@ This is a **Django-based web application** that intelligently recommends Udemy c
 **Course Processing Pipeline:**
 📚 Upload Udemy CSV Dataset → Extract Course Titles → Generate Course Embeddings
 
-
+```
 ---
 
 ## 🧪 How It Works
@@ -113,8 +113,7 @@ Key packages:
 
 Your Udemy courses CSV should have these columns:
 title,link,price
-"Python for Data Science","https://udemy.com/course/...",49.99
-"Web Development Bootcamp","https://udemy.com/course/...",89.99
+"Web Development Bootcamp",[Link](https://www.kaggle.com/datasets/andrewmvd/udemy-courses)"
 
 ---
 
