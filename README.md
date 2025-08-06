@@ -29,7 +29,8 @@ This is a **Django-based web application** that intelligently recommends Udemy c
 
 
 ## 📊 System Architecture
----
+
+
 📄 User Uploads Resume (PDF/TXT)
         ↓
 🔍 Parse Text using pdfplumber
@@ -45,26 +46,7 @@ This is a **Django-based web application** that intelligently recommends Udemy c
 **Course Processing Pipeline:**
 📚 Upload Udemy CSV Dataset → Extract Course Titles → Generate Course Embeddings
 
----
 
-## 📁 Folder Structure
----
-resume_recommender/
-├── courses/             # Django app for course processing
-│   ├── views.py
-│   ├── models.py
-│   ├── urls.py
-│   └── utils/
-│       ├── parser.py        # Resume parsing logic
-│       ├── embeddings.py    # SentenceTransformers wrapper
-│       └── recommender.py   # Cosine similarity logic
-├── templates/
-│   └── upload.html
-├── static/
-│   └── style.css
-├── media/              # Uploaded files (resume, dataset)
-├── manage.py
-└── requirements.txt
 ---
 
 ## 🧪 How It Works
