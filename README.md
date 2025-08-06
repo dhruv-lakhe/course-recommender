@@ -27,21 +27,28 @@ This is a **Django-based web application** that intelligently recommends Udemy c
 
 ---
 
-## 📊 System Architecture
 
-graph TD
-    A[User Uploads Resume (PDF/TXT)] --> B[Parse Text using pdfplumber or plain read]
-    B --> C[Generate Sentence Embedding using DistilBERT]
-    D[Upload Udemy CSV Dataset] --> E[Extract Course Titles]
-    E --> F[Generate Embeddings for Courses]
-    C --> G[Compare with Course Embeddings using Cosine Similarity]
-    F --> G
-    G --> H[Sort by Similarity Score]
-    H --> I[Top N Course Recommendations]
+## 📊 System Architecture
+---
+📄 User Uploads Resume (PDF/TXT)
+        ↓
+🔍 Parse Text using pdfplumber
+        ↓
+🧠 Generate Sentence Embedding using DistilBERT
+        ↓
+📊 Compare with Course Embeddings using Cosine Similarity
+        ↓
+📈 Sort by Similarity Score
+        ↓
+🎯 Display Top N Course Recommendations
+
+**Course Processing Pipeline:**
+📚 Upload Udemy CSV Dataset → Extract Course Titles → Generate Course Embeddings
+
 ---
 
 ## 📁 Folder Structure
-
+---
 resume_recommender/
 ├── courses/             # Django app for course processing
 │   ├── views.py
@@ -58,7 +65,7 @@ resume_recommender/
 ├── media/              # Uploaded files (resume, dataset)
 ├── manage.py
 └── requirements.txt
-
+---
 
 ## 🧪 How It Works
 
