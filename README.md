@@ -38,20 +38,27 @@ graph TD
     F --> G
     G --> H[Sort by Similarity Score]
     H --> I[Top N Course Recommendations]
-
 ---
 
 ## 📁 Folder Structure
 
-graph TD
-A[User Uploads Resume (PDF/TXT)] --> B[Parse Text using pdfplumber or plain r
-ad] B --> C[Generate Sentence Embedding using Dis
-ilBERT] D[Upload Udemy CSV Dataset] --> E[Extract Co
-rse Titles] E --> F[Generate Embeddi
-gs for Courses] C --> G[Compare with Course Embeddings usin
-Cosine
-Similarity] F --> G G -->
----
+resume_recommender/
+├── courses/             # Django app for course processing
+│   ├── views.py
+│   ├── models.py
+│   ├── urls.py
+│   └── utils/
+│       ├── parser.py        # Resume parsing logic
+│       ├── embeddings.py    # SentenceTransformers wrapper
+│       └── recommender.py   # Cosine similarity logic
+├── templates/
+│   └── upload.html
+├── static/
+│   └── style.css
+├── media/              # Uploaded files (resume, dataset)
+├── manage.py
+└── requirements.txt
+
 
 ## 🧪 How It Works
 
